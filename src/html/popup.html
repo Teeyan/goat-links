@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/popup.css">
+	</head>
+
+	<body>
+		<div id="titleDiv">
+			<h2>GOAT-Links</h2>
+			<img src="../resources/logo-128.png"/>
+			<p>When adding a new GOAT-Link you'll have to restart browser or open a new tab for changes to take effect!</p>
+		</div>
+
+		<div id="formDiv">
+			<label for="goValue">go-value:</label><br>
+			<input type="text" id="goValue" name="goValue"><br>
+			<label for="goLink">go-link:</label><br>
+			<input type="text" id="goLink" name="goLink"><br>
+			<div id="formButtons">
+				<button id="createLinkButton" type="submit">Create Link</button>
+				<button id="viewLinksButton">View My Links</button>
+			</div>
+		</div>
+
+		<div id="linksDiv" style="overflow-x:auto;">
+		</div>
+
+		<script src="../js/popup.js"></script>
+	</body>
+</html>

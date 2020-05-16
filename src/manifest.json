@@ -1,0 +1,32 @@
+{
+    "name": "GOAT Links",
+    "version": "0.1",
+    "description": "Minimal non-enterprise go links",
+    "manifest_version": 2,
+    "background": {
+    	"scripts": ["js/background.js"],
+    	"persistent": true
+    },
+    "permissions": [
+    	"activeTab",
+    	"webRequest",
+    	"webRequestBlocking",
+    	"storage",
+    	"windows",
+    	"tabs",
+    	"https://*/*",
+    	"http://*/*"
+    ],
+    "browser_action": {
+    	"default_popup": "html/popup.html",
+        "default_icon": {
+            "16": "resources/logo-16.png",
+            "32": "resources/logo-32.png",
+            "48": "resources/logo-48.png",
+            "128": "resources/logo-128.png"
+        }
+    },
+    "web_accessible_resources": [
+        "html/redirect.html"
+    ]
+}
